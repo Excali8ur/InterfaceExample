@@ -8,6 +8,8 @@ namespace InterfaceExample
 {
     public interface iVermenigvuldigen
     {
+        double Getal { get; }
+
         /// <summary>
         /// Vermenigvuldigd van 2 getallen en retouneert het antwoord
         /// </summary>

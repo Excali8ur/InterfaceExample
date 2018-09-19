@@ -10,6 +10,14 @@ namespace InterfaceExample
     {
         private double getal = 1;
 
+        double iTellen.Getal { get => getal;}
+        double iVermenigvuldigen.Getal {
+            get
+            {
+                return getal - 100;
+            }
+        }
+
         public double Optellen(double x)
         {
             getal += x;

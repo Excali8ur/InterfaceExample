@@ -38,6 +38,9 @@
             this.lblAftrekken = new System.Windows.Forms.Label();
             this.lblVermenigvuldigen = new System.Windows.Forms.Label();
             this.lblDelen = new System.Windows.Forms.Label();
+            this.btnLaatZien = new System.Windows.Forms.Button();
+            this.lblLaatZien1 = new System.Windows.Forms.Label();
+            this.lblLaatZien2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnOptellen
@@ -84,6 +87,7 @@
             this.btnVermenigvuldigen.TabIndex = 6;
             this.btnVermenigvuldigen.Text = "Vermenigvuldigen";
             this.btnVermenigvuldigen.UseVisualStyleBackColor = true;
+            this.btnVermenigvuldigen.Click += new System.EventHandler(this.btnVermenigvuldigen_Click);
             // 
             // bntDelen
             // 
@@ -93,6 +97,7 @@
             this.bntDelen.TabIndex = 7;
             this.bntDelen.Text = "Delen";
             this.bntDelen.UseVisualStyleBackColor = true;
+            this.bntDelen.Click += new System.EventHandler(this.bntDelen_Click);
             // 
             // lblOptellen
             // 
@@ -130,11 +135,42 @@
             this.lblDelen.TabIndex = 11;
             this.lblDelen.Text = "label1";
             // 
+            // btnLaatZien
+            // 
+            this.btnLaatZien.Location = new System.Drawing.Point(52, 266);
+            this.btnLaatZien.Name = "btnLaatZien";
+            this.btnLaatZien.Size = new System.Drawing.Size(100, 42);
+            this.btnLaatZien.TabIndex = 12;
+            this.btnLaatZien.Text = "Laat Getal Zien";
+            this.btnLaatZien.UseVisualStyleBackColor = true;
+            this.btnLaatZien.Click += new System.EventHandler(this.btnLaatZien_Click);
+            // 
+            // lblLaatZien1
+            // 
+            this.lblLaatZien1.AutoSize = true;
+            this.lblLaatZien1.Location = new System.Drawing.Point(176, 266);
+            this.lblLaatZien1.Name = "lblLaatZien1";
+            this.lblLaatZien1.Size = new System.Drawing.Size(35, 13);
+            this.lblLaatZien1.TabIndex = 13;
+            this.lblLaatZien1.Text = "label1";
+            // 
+            // lblLaatZien2
+            // 
+            this.lblLaatZien2.AutoSize = true;
+            this.lblLaatZien2.Location = new System.Drawing.Point(176, 295);
+            this.lblLaatZien2.Name = "lblLaatZien2";
+            this.lblLaatZien2.Size = new System.Drawing.Size(35, 13);
+            this.lblLaatZien2.TabIndex = 15;
+            this.lblLaatZien2.Text = "label1";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblLaatZien2);
+            this.Controls.Add(this.lblLaatZien1);
+            this.Controls.Add(this.btnLaatZien);
             this.Controls.Add(this.lblDelen);
             this.Controls.Add(this.lblVermenigvuldigen);
             this.Controls.Add(this.lblAftrekken);
@@ -164,6 +200,9 @@
         private System.Windows.Forms.Label lblAftrekken;
         private System.Windows.Forms.Label lblVermenigvuldigen;
         private System.Windows.Forms.Label lblDelen;
+        private System.Windows.Forms.Button btnLaatZien;
+        private System.Windows.Forms.Label lblLaatZien1;
+        private System.Windows.Forms.Label lblLaatZien2;
     }
 }
 

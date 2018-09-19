@@ -8,6 +8,8 @@ namespace InterfaceExample
 {
     public interface iTellen
     {
+        double Getal { get;}
+
         /// <summary>
         /// Telt 2 getallen bij elkaar op en retouneert het antwoord
         /// </summary>

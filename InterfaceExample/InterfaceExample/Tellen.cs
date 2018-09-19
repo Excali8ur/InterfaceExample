@@ -6,32 +6,38 @@ using System.Threading.Tasks;
 
 namespace InterfaceExample
 {
-    public class Tellen : iTellen
+    public class Tellen : iTellen, iVermenigvuldigen
     {
-        public int Optellen(int x, int y)
+        private double getal = 1;
+
+        public double Optellen(double x)
         {
-            return x + y;
+            getal += x;
+            return getal;
         }
 
-        public int Aftrekken(int x, int y)
+        public double Aftrekken(double x)
         {
-            return x - y;
+            getal -= x;
+            return getal;
         }
 
-        public float Vermenigvuldigen(int x, int y)
+        public double Vermenigvuldigen(double x)
         {
-            return x * y;
+            getal *= x;
+            return getal;
         }
 
-        public float Delen(int x, int y)
+        public double Delen(double x)
         {
-            if (y == 0)
+            if (x == 0)
             {
                 throw new DivideByZeroException("Delen door nul is flauwekul");
             }
             else
             {
-                return x / y;
+                getal /= x;
+                return getal;
             }
         }
     }

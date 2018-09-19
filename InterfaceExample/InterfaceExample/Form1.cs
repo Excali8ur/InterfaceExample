@@ -12,9 +12,24 @@ namespace InterfaceExample
 {
     public partial class Form1 : Form
     {
+        Tellen t;
+
         public Form1()
         {
             InitializeComponent();
+            t = new Tellen();
+        }
+
+        private void btnOptellen_Click(object sender, EventArgs e)
+        {
+            double a = Convert.ToDouble(tbGetal1.Text);
+            lblOptellen.Text = t.Optellen(a).ToString();
+        }
+
+        private void bntAftrekken_Click(object sender, EventArgs e)
+        {
+            double a = Convert.ToDouble(tbGetal1.Text);
+            lblAftrekken.Text = t.Aftrekken(a).ToString();
         }
     }
 }

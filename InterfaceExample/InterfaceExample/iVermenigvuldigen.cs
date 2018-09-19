@@ -6,20 +6,22 @@ using System.Threading.Tasks;
 
 namespace InterfaceExample
 {
-    public interface iTellen
+    public interface iVermenigvuldigen
     {
         /// <summary>
-        /// Telt 2 getallen bij elkaar op en retouneert het antwoord
+        /// Vermenigvuldigd van 2 getallen en retouneert het antwoord
         /// </summary>
         /// <param name="x"></param>
+        /// <param name="y"></param>
         /// <returns>Resultaat van berekening</returns>
-        double Optellen(double x);
+        double Vermenigvuldigen(double x);
 
         /// <summary>
-        /// Trekt 2 getallen van elkaar af en retouneert het antwoord
+        /// Deelt 2 getallen en retouneert het antwoord
         /// </summary>
         /// <param name="x"></param>
+        /// <param name="y"></param>
         /// <returns>Resultaat van berekening</returns>
-        double Aftrekken(double x);
+        double Delen(double x);
     }
 }

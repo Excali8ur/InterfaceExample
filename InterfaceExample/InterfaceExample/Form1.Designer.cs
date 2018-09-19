@@ -30,7 +30,6 @@
         {
             this.btnOptellen = new System.Windows.Forms.Button();
             this.tbGetal1 = new System.Windows.Forms.TextBox();
-            this.tbGetal2 = new System.Windows.Forms.TextBox();
             this.bntAftrekken = new System.Windows.Forms.Button();
             this.btnVermenigvuldigen = new System.Windows.Forms.Button();
             this.bntDelen = new System.Windows.Forms.Button();
@@ -60,14 +59,6 @@
             this.tbGetal1.Size = new System.Drawing.Size(100, 20);
             this.tbGetal1.TabIndex = 2;
             this.tbGetal1.Text = "10";
-            // 
-            // tbGetal2
-            // 
-            this.tbGetal2.Location = new System.Drawing.Point(179, 36);
-            this.tbGetal2.Name = "tbGetal2";
-            this.tbGetal2.Size = new System.Drawing.Size(100, 20);
-            this.tbGetal2.TabIndex = 3;
-            this.tbGetal2.Text = "5";
             // 
             // bntAftrekken
             // 
@@ -178,7 +169,6 @@
             this.Controls.Add(this.bntDelen);
             this.Controls.Add(this.btnVermenigvuldigen);
             this.Controls.Add(this.bntAftrekken);
-            this.Controls.Add(this.tbGetal2);
             this.Controls.Add(this.tbGetal1);
             this.Controls.Add(this.btnOptellen);
             this.Name = "Form1";
@@ -192,7 +182,6 @@
 
         private System.Windows.Forms.Button btnOptellen;
         private System.Windows.Forms.TextBox tbGetal1;
-        private System.Windows.Forms.TextBox tbGetal2;
         private System.Windows.Forms.Button bntAftrekken;
         private System.Windows.Forms.Button btnVermenigvuldigen;
         private System.Windows.Forms.Button bntDelen;
